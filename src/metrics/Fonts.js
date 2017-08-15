@@ -1,5 +1,6 @@
 const Fonts = {
-    ralewayMd: 'Raleway-Medium'
+    ralewayMd: 'Raleway-Medium',
+    raleway: 'Raleway-Regular'
 }
 
 export default Fonts;

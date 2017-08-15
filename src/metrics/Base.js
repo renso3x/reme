@@ -13,5 +13,6 @@ export default {
         justifyContent: 'center',
         alignItems: 'center'
     },
-    deviceWidth: width
+    deviceWidth: width,
+    ph20: { paddingHorizontal: 15 }
 }

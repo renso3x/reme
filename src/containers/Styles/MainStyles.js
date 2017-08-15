@@ -1,4 +1,5 @@
 import Base from '../../metrics/Base';
+import Fonts from '../../metrics/Fonts';
 
 const styles = { 
     container: {
