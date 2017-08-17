@@ -7,7 +7,6 @@ const styles = {
         width: undefined,
         height: undefined,
         backgroundColor: 'transparent',
-        alignItems: 'center',
     },
     headContainer: {
         paddingVertical: 20
@@ -15,7 +14,8 @@ const styles = {
     iconLogo: {
         width: 50,
         height: 50,
-        resizeMode: 'contain'
+        resizeMode: 'contain',
+        alignSelf: 'center'
     },
     btnStart: {
         position: 'absolute',
