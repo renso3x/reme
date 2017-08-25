@@ -17,16 +17,18 @@ function Duration() {
             </View>
             <View style={styles.optionContainer}>
                 <Interventions
-                    name={'RE-FRAME'}
+                    name={'BREATHE'}
                     minutes={2}
+                    isActive
                 />
                 <Interventions
-                    name={'RE-FRESH'}
+                    name={'RECHARGE'}
                     minutes={5}
                 />
                 <Interventions
-                    name={'RE-JUVENATE'}
+                    name={'TIME TO YOURSELF'}
                     minutes={20}
+                    longName
                 />
             </View>
         </View>

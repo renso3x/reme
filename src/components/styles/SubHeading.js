@@ -5,6 +5,7 @@ const styles = {
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
+        paddingVertical: 8
     },
     dualOption: {
         flexDirection: 'row',
@@ -21,7 +22,7 @@ const styles = {
         backgroundColor: 'rgba(255, 255, 255, 0.5)',
     },
     subText: {
-        fontFamily: Fonts.raleway,
+        fontFamily: Fonts.ralewayMd,
         fontSize: 25,
         color: '#fff',
     },

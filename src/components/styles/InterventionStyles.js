@@ -5,26 +5,34 @@ export default {
         alignItems: 'center',
     },
     optionContainer: {
-        width: 60,
-        height: 60,
-        borderRadius: 40,
+        width: 70,
+        height: 70,
+        borderRadius: 35,
         backgroundColor: 'transparent',
-        borderWidth: 2,
+        borderWidth: 1,
         borderColor: '#fff',
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    btnContainer: {
+        paddingBottom: 10,
     },
     activeOption: {
         backgroundColor: 'white'
     },
     minuteText: {
+        alignSelf: 'center',
         fontFamily: Fonts.raleway,
-        fontSize: 18,
+        fontSize: 25,
         color: '#fff'
     },
     name: {
-        fontFamily: Fonts.raleway,
+        fontFamily: Fonts.ralewaySmB,
         fontSize: 14,
-        color: '#fff'
+        color: '#fff',
+        alignSelf: 'center'
+    },
+    activeName: {
+        color: '#2bae9f'
     }
 }

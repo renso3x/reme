@@ -14,5 +14,6 @@ export default {
         alignItems: 'center'
     },
     deviceWidth: width,
-    ph20: { paddingHorizontal: 15 }
+    ph20: { paddingHorizontal: 15 },
+    mt10: { marginTop: 10 }
 }

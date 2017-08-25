@@ -9,7 +9,7 @@ const styles = {
         backgroundColor: 'transparent',
     },
     headContainer: {
-        paddingVertical: 20
+        paddingTop: 12,
     },
     iconLogo: {
         width: 50,
