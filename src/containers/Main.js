@@ -17,7 +17,9 @@ import Sounds from '../components/Sounds';
 import Voice from '../components/Voice';
 import LanguagePicker from '../components/LanguagePicker';
 
-function Main() {
+function Main({
+    navigation
+}) {
     // Sound.setCategory('SoloAmbient');
     // var whoosh = new Sound('guitar_05.mp3', Sound.MAIN_BUNDLE, (error) => {
     //     if (error) {
@@ -123,7 +125,8 @@ function Main() {
 
     // // Release the audio player resource
     // voice.release();
-
+    const onPlay = () => navigation.navigate('play');
+    
     return (
         <Image 
             source={Icons.background}
@@ -142,6 +145,7 @@ function Main() {
                 textStyle={styles.btnText}
                 containerViewStyle={styles.btnStart}
                 backgroundColor={"#272F32"}
+                onPress={onPlay}
             />
 
             <Duration />

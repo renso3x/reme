@@ -67,9 +67,11 @@
 		D71015BB1F4BAC76002F86E6 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FB89831F4277A50074AE1C /* libRNSound.a */; };
 		D71015BF1F4BACF8002F86E6 /* guitar_05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D71015BE1F4BACF8002F86E6 /* guitar_05.mp3 */; };
 		D71015C11F4BAE5F002F86E6 /* en_male_20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D71015C01F4BAE5F002F86E6 /* en_male_20.mp3 */; };
+		D77DA2E81F54E62100C80679 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D77DA2C11F54E36100C80679 /* libART.a */; };
 		E4A9FF2F9FC54683AC5CC20D /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E7CC8C2B4844C81A9F06C47 /* Raleway-BoldItalic.ttf */; };
 		E676124ECEA345388B22C076 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEFFC1A0CEF14BE58CC6EEA8 /* Raleway-Italic.ttf */; };
 		F370D04BA1684BC2B37713A0 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFBFB66A8EAF4390AE5C3D7B /* FontAwesome.ttf */; };
+		F40FAE6B02F243D3968984C0 /* libRNVolumeSlider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A6FF9B3C1F4F7FAB393711 /* libRNVolumeSlider.a */; };
 		F8A75EDC14EA420A82D635A5 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57F00274E0A14ADA9B89B4EF /* MaterialCommunityIcons.ttf */; };
 /* End PBXBuildFile section */
 
@@ -263,6 +265,27 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		D77DA2C01F54E36100C80679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D77DA2BB1F54E35F00C80679 /* ART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
+			remoteInfo = ART;
+		};
+		D77DA2C21F54E36100C80679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D77DA2BB1F54E35F00C80679 /* ART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 323A12871E5F266B004975B8;
+			remoteInfo = "ART-tvOS";
+		};
+		D77DA3231F54E9C200C80679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9725D8CA3934D79A09C2B85 /* RNVolumeSlider.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B15A785B1C561BA20027C1CE;
+			remoteInfo = RNVolumeSlider;
+		};
 		D7FB895A1F4277A40074AE1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4A4D4A97CB714469BE748A61 /* RCTSplashScreen.xcodeproj */;
@@ -353,6 +376,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* remeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = remeAppTests.m; sourceTree = "<group>"; };
 		0223489C952D4D78A37C47F6 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		04A6FF9B3C1F4F7FAB393711 /* libRNVolumeSlider.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVolumeSlider.a; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* remeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -397,6 +421,8 @@
 		D6261607742C47FFACFF7836 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Medium.ttf"; path = "../src/assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; };
 		D71015BE1F4BACF8002F86E6 /* guitar_05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = guitar_05.mp3; path = "../../reme files/REME/Media/background/mp3/guitar_05.mp3"; sourceTree = "<group>"; };
 		D71015C01F4BAE5F002F86E6 /* en_male_20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = en_male_20.mp3; path = "../../reme files/REME/Media/voice/mp3/en_male_20.mp3"; sourceTree = "<group>"; };
+		D77DA2BB1F54E35F00C80679 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
+		D9725D8CA3934D79A09C2B85 /* RNVolumeSlider.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVolumeSlider.xcodeproj; path = "../node_modules/react-native-volume-slider/ios/RNVolumeSlider.xcodeproj"; sourceTree = "<group>"; };
 		DFBFB66A8EAF4390AE5C3D7B /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		E0A84A8AA764482C97655829 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		E185670F139B47AAA135C5EE /* RNSound.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
@@ -421,6 +447,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77DA2E81F54E62100C80679 /* libART.a in Frameworks */,
 				D71015BB1F4BAC76002F86E6 /* libRNSound.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -437,6 +464,7 @@
 				CDED9897023B437F9841DAA4 /* libRCTSplashScreen.a in Frameworks */,
 				7C9E307E8A234D75A94E60A6 /* libRCTVideo.a in Frameworks */,
 				0D375B4A35E749518725948C /* libRNVectorIcons.a in Frameworks */,
+				F40FAE6B02F243D3968984C0 /* libRNVolumeSlider.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +624,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D77DA2BB1F54E35F00C80679 /* ART.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -612,6 +641,7 @@
 				E185670F139B47AAA135C5EE /* RNSound.xcodeproj */,
 				B6AFC18A88394424BF18B0EB /* RCTVideo.xcodeproj */,
 				EA8CF1A2CC834280B084CE3F /* RNVectorIcons.xcodeproj */,
+				D9725D8CA3934D79A09C2B85 /* RNVolumeSlider.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -682,6 +712,23 @@
 				00E356EE1AD99517003FC87E /* remeAppTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* remeApp-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* remeApp-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D77DA2BC1F54E35F00C80679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D77DA2C11F54E36100C80679 /* libART.a */,
+				D77DA2C31F54E36100C80679 /* libART-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D77DA2FA1F54E9C000C80679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D77DA3241F54E9C200C80679 /* libRNVolumeSlider.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -840,6 +887,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = D77DA2BC1F54E35F00C80679 /* Products */;
+					ProjectRef = D77DA2BB1F54E35F00C80679 /* ART.xcodeproj */;
+				},
+				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
@@ -902,6 +953,10 @@
 				{
 					ProductGroup = D7FB89E31F42C8C10074AE1C /* Products */;
 					ProjectRef = EA8CF1A2CC834280B084CE3F /* RNVectorIcons.xcodeproj */;
+				},
+				{
+					ProductGroup = D77DA2FA1F54E9C000C80679 /* Products */;
+					ProjectRef = D9725D8CA3934D79A09C2B85 /* RNVolumeSlider.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1088,6 +1143,27 @@
 			fileType = archive.ar;
 			path = libRCTText.a;
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D77DA2C11F54E36100C80679 /* libART.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libART.a;
+			remoteRef = D77DA2C01F54E36100C80679 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D77DA2C31F54E36100C80679 /* libART-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libART-tvOS.a";
+			remoteRef = D77DA2C21F54E36100C80679 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D77DA3241F54E9C200C80679 /* libRNVolumeSlider.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNVolumeSlider.a;
+			remoteRef = D77DA3231F54E9C200C80679 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		D7FB895B1F4277A40074AE1C /* libRCTSplashScreen.a */ = {
@@ -1342,12 +1418,14 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-volume-slider/ios/RNVolumeSlider",
 				);
 				INFOPLIST_FILE = remeAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1376,12 +1454,14 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-volume-slider/ios/RNVolumeSlider",
 				);
 				INFOPLIST_FILE = remeAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1411,6 +1491,7 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-volume-slider/ios/RNVolumeSlider",
 				);
 				INFOPLIST_FILE = remeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1437,6 +1518,7 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-volume-slider/ios/RNVolumeSlider",
 				);
 				INFOPLIST_FILE = remeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1470,11 +1552,13 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-volume-slider/ios/RNVolumeSlider",
 				);
 				INFOPLIST_FILE = "remeApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1512,11 +1596,13 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-video/ios",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-volume-slider/ios/RNVolumeSlider",
 				);
 				INFOPLIST_FILE = "remeApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1555,6 +1641,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.remeApp-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1579,6 +1666,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

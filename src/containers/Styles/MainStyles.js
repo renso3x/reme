@@ -28,6 +28,9 @@ const styles = {
     btnText: {
         color: '#fff',
         fontSize: 20
+    },
+    centerContent: {
+        alignSelf: 'center',
     }
 }
 
