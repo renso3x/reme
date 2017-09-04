@@ -7,6 +7,10 @@ import {
 } from 'react-native';
 import { Button } from 'react-native-elements';
 import Sound from 'react-native-sound';
+
+import { 
+    Button as AppBtn
+} from '../components/common';
 import styles from './Styles/MainStyles';
 import Base from '../metrics/Base';
 import Icons from '../metrics/Icons';
@@ -137,6 +141,17 @@ function Main({
                     source={Icons.appMd}
                     style={styles.iconLogo}
                 />
+                <AppBtn
+                    onPress={() => 
+                        navigation.navigate('about')
+                    }
+                    style={styles.aboutIconBtn}
+                >
+                    <Image 
+                        source={Icons.about}
+                        style={styles.aboutIcon}
+                    />
+                </AppBtn>
             </View>
             <Button
                 raised

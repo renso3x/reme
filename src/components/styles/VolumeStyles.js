@@ -1,6 +1,16 @@
 export default {
+    sliderContainer: {
+    	flexDirection: 'row',
+    	paddingHorizontal: 20,
+    	alignSelf: 'center',
+    	alignItems: 'center'
+    },
     slider: {
-        height: 30,
-        marginLeft: 7,
+    	flex: 1,
+    	marginHorizontal: 10
+    },
+    imageSize: {
+	 	width: 18,
+    	height: 18
     }
 }

@@ -8,7 +8,14 @@ const Icons = {
     stop: require('../assets/images/stop-button.png'),
     male: require('../assets/images/male-icon.png'),
     female: require('../assets/images/female-icon.png'),
-    
+    mute: require('../assets/images/volume-muted.png'),
+    volume: require('../assets/images/volume-icon.png'),
+    play: require('../assets/images/play-button.png'),
+    pause: require('../assets/images/pause-button.png'),
+    stop: require('../assets/images/stop-button.png'),
+    rewind: require('../assets/images/rewind-button.png'),
+    about: require('../assets/images/about-icon.png'),
+    back: require('../assets/images/back-button.png'),
 }
 
 export default Icons;

@@ -31,6 +31,31 @@ const styles = {
     },
     centerContent: {
         alignSelf: 'center',
+    },
+    aboutTxt: {
+        fontFamily: Fonts.raleway,
+        fontSize: 14,
+        textAlign: 'justify'
+    },
+    aboutIconBtn: {
+        position: 'absolute',
+        right: 10,
+        top: 25,
+    },
+    backIconBtn: {
+        position: 'absolute',
+        left: 10,
+        top: 25,
+    },
+    aboutIcon: {
+        width: 25,
+        height: 25,
+    },
+    aboutContainer: {
+        flex: 1,
+        paddingHorizontal: 20,
+        backgroundColor: '#fff',
+        justifyContent: 'center',
     }
 }
 
