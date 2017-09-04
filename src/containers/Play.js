@@ -15,6 +15,7 @@ import styles from './Styles/MainStyles';
 import Base from '../metrics/Base';
 import Icons from '../metrics/Icons';
 import Fonts from '../metrics/Fonts';
+import playStyle from './Styles/PlayStyles';
 import volumeStyle from '../components/styles/VolumeStyles';
 
 var DEFAULT_VALUE = 0.2;
@@ -56,6 +57,7 @@ var SliderContainer = React.createClass({
 });
 
 function Play() {
+    const MAX_POINTS = 500;
     return (
         <Image
             source={Icons.background}
@@ -69,46 +71,23 @@ function Play() {
             </View>
             <View style={styles.centerContent}>
                 <AnimatedCircularProgress
-                    size={120}
-                    width={15}
+                    size={200}
+                    width={3}
                     fill={100}
-                    tintColor="#00e0ff"
-                    backgroundColor="#3d5875"
-                />
-                <SliderContainer caption='<Slider/> with custom style #4'>
-                    <Slider
-                        trackStyle={customStyles4.track}
-                        thumbStyle={customStyles4.thumb}
-                        minimumTrackTintColor='#d14ba6'
-                    />
-                </SliderContainer>
+                    tintColor="#fff"
+                    backgroundColor="#81d4cb"
+                    rotation={-360}
+                >
+                    {
+                        (fill) => (
+                          <Text style={playStyle.points}>
+                            { Math.round(MAX_POINTS * fill / 100) }
+                          </Text>
+                        )
+                      }
+                </AnimatedCircularProgress>
             </View>
         </Image>
     );
 }
-
-var customStyles4 = StyleSheet.create({
-    track: {
-        height: 10,
-        borderRadius: 4,
-        backgroundColor: 'white',
-        shadowColor: 'black',
-        shadowOffset: { width: 0, height: 1 },
-        shadowRadius: 1,
-        shadowOpacity: 0.15,
-    },
-    thumb: {
-        width: 20,
-        height: 20,
-        backgroundColor: '#f8a1d6',
-        borderColor: '#a4126e',
-        borderWidth: 5,
-        borderRadius: 10,
-        shadowColor: 'black',
-        shadowOffset: { width: 0, height: 2 },
-        shadowRadius: 2,
-        shadowOpacity: 0.35,
-    }
-});
-
 export default Play;
