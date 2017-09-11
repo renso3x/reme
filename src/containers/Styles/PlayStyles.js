@@ -14,7 +14,7 @@ export default {
         textAlign: 'center',
         color: '#fff',
         fontFamily: Fonts.raleway,
-        fontSize: 60,
+        fontSize: 55,
         fontWeight: "100"
     },
     track: {
