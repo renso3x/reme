@@ -1,5 +1,4 @@
-import Base from '../../metrics/Base';
-import Fonts from '../../metrics/Fonts';
+import { Base, Fonts } from '../../metrics';
 
 const styles = { 
     container: {
@@ -56,7 +55,7 @@ const styles = {
         paddingHorizontal: 20,
         backgroundColor: '#fff',
         justifyContent: 'center',
-    }
+    },
 }
 
 export default styles;

@@ -3,5 +3,6 @@ export default {
         height: 100, 
         padding: 30,
         color: '#fff',
+        marginBottom: 100,
     }
 }

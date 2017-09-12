@@ -1,20 +1,18 @@
-import moment from 'moment';
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
     View, 
     Text,
     Image,
-    ImageBackground
+    ImageBackground,
+    ScrollView
 } from 'react-native';
 import { Button } from 'react-native-elements';
 import { 
     Button as AppBtn
 } from '../components/common';
 import styles from './Styles/MainStyles';
-import Base from '../metrics/Base';
-import Icons from '../metrics/Icons';
-import Fonts from '../metrics/Fonts';
+import { Base, Icons, Fonts } from '../metrics';
 
 import Duration from '../components/Duration';
 import Sounds from '../components/Sounds';
@@ -48,6 +46,12 @@ function Main({
                     />
                 </AppBtn>
             </View>
+            <ScrollView>
+                <Duration />
+                <Sounds />
+                <Voice />
+                <LanguagePicker />
+            </ScrollView>
             <Button
                 raised
                 title='START'
@@ -57,11 +61,6 @@ function Main({
                 backgroundColor={"#272F32"}
                 onPress={onPlay}
             />
-
-            <Duration />
-            <Sounds />
-            <Voice />
-            <LanguagePicker />
         </ImageBackground>
     );
 }

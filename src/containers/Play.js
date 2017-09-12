@@ -16,16 +16,11 @@ import {
     Icon as AppIcon 
 } from '../components/common/';
 import SliderControl from '../components/SliderControl';
-
 import styles from './Styles/MainStyles';
-import Base from '../metrics/Base';
-import Icons from '../metrics/Icons';
-import Fonts from '../metrics/Fonts';
+import { Base, Fonts, Icons } from '../metrics/';
 import playStyle from './Styles/PlayStyles';
-import { countdown } from '../libs';
 
 class Play extends React.PureComponent {
-
     state = {
         timer: 0,
     };
@@ -92,12 +87,7 @@ class Play extends React.PureComponent {
                             rightIcon={Icons.male}
                             style={playStyle}
                         />
-                        {/* volume controls */}
-                        <SliderControl 
-                            leftIcon={Icons.mute}
-                            rightIcon={Icons.volume}
-                            style={playStyle}
-                        />
+                       
                         <View style={playStyle.controlsContainer}>
                             <AppBtn>
                                 <AppIcon name={Icons.rewind} style={playStyle.controlIconSize} />

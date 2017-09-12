@@ -1,4 +1,4 @@
-import Fonts from '../../metrics/Fonts';
+import { Fonts } from '../../metrics';
 
 const styles = {
     optionContainer: {
@@ -18,13 +18,14 @@ const styles = {
     },
     hr: {
         flex: 1,
-        height: 2,
+        height: 1,
         backgroundColor: 'rgba(255, 255, 255, 0.5)',
     },
     subText: {
         fontFamily: Fonts.ralewayMd,
         fontSize: 25,
         color: '#fff',
+        textAlign: 'center'
     },
 }
 

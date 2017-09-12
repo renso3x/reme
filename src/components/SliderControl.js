@@ -12,21 +12,17 @@ function SliderControl({
 }) {
 	return (
         <View style={volumeStyle.sliderContainer}>
-            <Image 
-                source={leftIcon}
-                style={volumeStyle.imageSize}
+            <Image  source={leftIcon} style={volumeStyle.imageSize} />
+        	<Slider
+                trackStyle={style.track}
+                thumbStyle={style.thumb}
+                minimumTrackTintColor='#fff'
+                style={volumeStyle.slider}
+                onValueChange={() => null}
             />
-            	<Slider
-                    trackStyle={style.track}
-                    thumbStyle={style.thumb}
-                    minimumTrackTintColor='#fff'
-                    style={volumeStyle.slider}
-                    onValueChange={() => null}
-                />
-            <Image 
-                source={rightIcon}
-                style={volumeStyle.imageSize}
-            />
+            {
+                rightIcon && <Image  source={rightIcon} style={volumeStyle.imageSize} />
+            }
         </View>
 	);
 }

@@ -16,6 +16,9 @@ const Icons = {
     rewind: require('../assets/images/rewind-button.png'),
     about: require('../assets/images/about-icon.png'),
     back: require('../assets/images/back-button.png'),
+    abstract: require('../assets/images/abstract-icon.png'),
+    cloud: require('../assets/images/cloud-icon.png'),
+    cross: require('../assets/images/cross-icon.png'),
 }
 
-export default Icons;
+export { Icons };

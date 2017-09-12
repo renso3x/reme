@@ -7,8 +7,7 @@ import {
 } from 'react-native';
 import { Button } from '../components/common';
 import styles from './Styles/MainStyles';
-import Icons from '../metrics/Icons';
-import Fonts from '../metrics/Fonts';
+import { Fonts, Icons } from '../metrics';
 
 function About({ navigation }) {
 	return (

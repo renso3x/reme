@@ -4,7 +4,7 @@ import {
 
 const width = Dimensions.get('window').width;
 
-export default {
+const Base = {
     flex: {
         flex: 1,
     },
@@ -17,3 +17,5 @@ export default {
     ph20: { paddingHorizontal: 15 },
     mt10: { marginTop: 10 }
 }
+
+export { Base };

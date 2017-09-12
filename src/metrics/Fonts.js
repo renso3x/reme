@@ -4,4 +4,4 @@ const Fonts = {
     ralewaySmB: 'Raleway-SemiBold',
 }
 
-export default Fonts;
+export { Fonts };

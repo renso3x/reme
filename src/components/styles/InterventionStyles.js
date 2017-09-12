@@ -1,4 +1,4 @@
-import Fonts from '../../metrics/Fonts';
+import { Fonts } from '../../metrics';
 
 export default {
     container: {

@@ -2,38 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { View, Text } from 'react-native';
 import { Button } from './common';
+import { Base } from '../metrics';
 import styles from './styles/InterventionStyles';
-import Base from '../metrics/Base';
 
 function Interventions({
     name,
     minutes,
     isActive,
-    longName
+    onPress,
 }) {
-    if (!longName) {
-        return (
-            <View style={styles.container}>
-                <Button style={styles.btnContainer}>
-                    <View style={[styles.optionContainer, isActive && styles.activeOption]}>
-                        <Text style={[styles.minuteText,  isActive && styles.activeName]}>{minutes}</Text>
-                    </View>
-                </Button>
-                <Text style={styles.name}>{name}</Text>
-            </View>
-        )
-    }
+    let iconActiveText = isActive === minutes ? styles.activeOption : null;
+    let iconActive = isActive === minutes ? styles.activeName : null;
     return (
         <View style={styles.container}>
-            <Button style={Base.mt10}>
-                <View style={[styles.optionContainer, isActive && styles.activeOption]}>
-                    <Text style={[styles.minuteText,  isActive && styles.activeName]}>{minutes}</Text>
+            <Button style={styles.btnContainer} onPress={onPress}>
+                <View style={[styles.optionContainer, iconActiveText]}>
+                    <Text style={[styles.minuteText,  iconActive]}>{minutes}</Text>
                 </View>
             </Button>
-             <View style={Base.mt10}>
-                <Text style={styles.name}>TIME TO</Text>
-                <Text style={styles.name}>YOURSELF</Text>
-            </View>
+            <Text style={styles.name}>{name}</Text>
         </View>
     )
 }
