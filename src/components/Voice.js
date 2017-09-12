@@ -1,16 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { 
-    withState, 
-    compose, 
-    withHandlers 
-} from 'recompose';
 import { Base, Fonts, Icons } from '../metrics';
 import styles from './styles/SubHeading';
 import IconOption from './IconOption';
 import iconStyles from './styles/IconOptionsStyle';
 
-let Voice = ({
+const Voice = ({
     voice,
     selectedVoice
 }) =>
@@ -40,12 +35,4 @@ let Voice = ({
         </View>
     </View>
 
-const enhance = compose(
-    withState('voice', 'setVoice', 'male'),
-    withHandlers({
-        selectedVoice: ({ setVoice, voice }) => (voice) => setVoice({ voice })
-    })
-);
-
-Voice = enhance(Voice);
 export default Voice;

@@ -1,10 +1,5 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { 
-    withState, 
-    compose, 
-    withHandlers 
-} from 'recompose';
 import { Base, Fonts, Icons } from '../metrics';
 import IconOption from './IconOption';
 import SliderControl from './SliderControl';
@@ -12,7 +7,7 @@ import styles from './styles/SubHeading';
 import soundStyle from './styles/SoundStyles';
 import playStyle from '../containers/Styles/PlayStyles';
 
-const Sound = ({
+const Sounds = ({
     sound,
     selectedSound,
 }) =>
@@ -65,14 +60,5 @@ const Sound = ({
             </View>
         </View>
     </View>
-
-const enhance = compose(
-    withState('sound', 'setSounds', 'guitar'),
-    withHandlers({
-        selectedSound: ({ setSounds, sound }) => (sound) => setSounds({ sound })
-    })
-);
-
-const Sounds = enhance(Sound);
 
 export default Sounds;
