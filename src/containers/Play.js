@@ -1,5 +1,5 @@
 import moment from 'moment';
-import React from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import {
     View,
@@ -20,42 +20,59 @@ import styles from './Styles/MainStyles';
 import { Base, Fonts, Icons } from '../metrics/';
 import playStyle from './Styles/PlayStyles';
 
-class Play extends React.PureComponent {
-    state = {
-        timer: 0,
-    };
+class Play extends PureComponent {
+    constructor(props) {
+        super(props);
+        this.state = {
+            timer: 0,
+            isPlaying: true,
+            song: null
+        };
 
-    componentWillMount() {
         Sound.setCategory('SoloAmbient');
-        this.play();
-    }
-
-    play() {
-        this.whoosh = new Sound('guitar_05.mp3', Sound.MAIN_BUNDLE, (error) => {
+        const song = new Sound('guitar_05.mp3', Sound.MAIN_BUNDLE, (error) => {
             if (error) {
                 console.log('failed to load the sound', error);
                 return;
             }
-            const tickInterval = setInterval(() => this.tick(), 250);
-            this.whoosh.play((success) => {
-                if (success) {
-                    clearInterval(tickInterval);
-                }
-            });
+            this.setState({ song });
+            this.play();
         });
     }
 
-    tick() {
-        this.whoosh.getCurrentTime((seconds) => {
-            const s = seconds;
-            const dur = moment.utc(moment.duration(seconds, "s").asMilliseconds()).format("mm:ss");
-            this.onTimerChange(dur);
+    tick = () => {
+        this.state.song.getCurrentTime((seconds) => {
+            const duration = moment.utc(moment.duration(seconds, "s").asMilliseconds()).format("mm:ss");
+            this.onTimerChange(duration);
         });
+    }
+
+    play = () => {
+        const tickInterval = setInterval(() => this.tick(), 250);
+        this.state.song.play((success) => {
+            if (success) { clearInterval(tickInterval) }
+        });
+    }
+
+    rewind = () => this.state.song.stop(() => this.state.song.play());
+
+    pause = () => {
+        this.setState({ isPlaying: !this.state.isPlaying });
+        if (this.state.isPlaying) {
+            return this.state.song.play();
+        }
+        return this.state.song.pause();
     }
 
     onTimerChange = (timer) => this.setState({ timer });
 
+    onBack = () => {
+        this.state.song.stop();
+        this.props.navigation.goBack(null);
+    }
+
     render() {
+        console.log('rendering');
         return (
             <ImageBackground
                 source={Icons.background}
@@ -89,13 +106,13 @@ class Play extends React.PureComponent {
                         />
                        
                         <View style={playStyle.controlsContainer}>
-                            <AppBtn>
+                            <AppBtn onPress={this.rewind}>
                                 <AppIcon name={Icons.rewind} style={playStyle.controlIconSize} />
                             </AppBtn>
-                            <AppBtn style={playStyle.playBtn}>
+                            <AppBtn style={playStyle.playBtn} onPress={this.pause}>
                                 <AppIcon name={Icons.play} style={playStyle.controlIconSize} />
                             </AppBtn>
-                            <AppBtn onPress={() => navigation.goBack(null)}>
+                            <AppBtn onPress={this.onBack}>
                                 <AppIcon name={Icons.stop} style={playStyle.controlIconSize} />
                             </AppBtn>
                         </View>
@@ -105,5 +122,4 @@ class Play extends React.PureComponent {
         );
     }
 }
-
 export default Play;
