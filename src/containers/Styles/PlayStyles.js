@@ -48,7 +48,8 @@ export default {
         height: 40,
     },
     playBtn: {
-        marginHorizontal: 30
+        marginLeft: 15,
+        marginRight: 15,
     },
 
 }

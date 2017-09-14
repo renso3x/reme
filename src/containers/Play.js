@@ -30,6 +30,7 @@ class Play extends PureComponent {
     }
 
     componentWillMount() {
+        console.log('im loading');
         Sound.setCategory('SoloAmbient');
         this.sound = new Sound('guitar_05.mp3', Sound.MAIN_BUNDLE, (error) => {
             if (error) {

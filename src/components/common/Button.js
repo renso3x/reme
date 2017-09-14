@@ -15,7 +15,9 @@ function Button({
     if (Platform.OS === 'android') {
         return (
             <TouchableNativeFeedback onPress={onPress}>
-                {children}
+                <View style={style}>
+                    {children}
+                </View>
             </TouchableNativeFeedback>
         );
     }
