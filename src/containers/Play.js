@@ -26,53 +26,63 @@ class Play extends PureComponent {
         this.state = {
             timer: 0,
             isPlaying: true,
-            song: null
         };
+    }
 
+    componentWillMount() {
         Sound.setCategory('SoloAmbient');
-        const song = new Sound('guitar_05.mp3', Sound.MAIN_BUNDLE, (error) => {
+        this.sound = new Sound('guitar_05.mp3', Sound.MAIN_BUNDLE, (error) => {
             if (error) {
                 console.log('failed to load the sound', error);
                 return;
             }
-            this.setState({ song });
             this.play();
         });
     }
 
-    tick = () => {
-        this.state.song.getCurrentTime((seconds) => {
-            const duration = moment.utc(moment.duration(seconds, "s").asMilliseconds()).format("mm:ss");
-            this.onTimerChange(duration);
+    componentWillUnMount() {
+        this.sound.stop();
+        clearInterval(this.tickInterval);
+        this.tickInterval = null;
+    }
+
+    tick() {
+        this.sound.getCurrentTime((seconds) => {
+            const time = moment.utc(moment.duration(seconds, "s").asMilliseconds()).format("mm:ss");
+            if (this.tickInterval) {
+                this.setState({ timer: time });
+            }
         });
     }
 
-    play = () => {
-        const tickInterval = setInterval(() => this.tick(), 250);
-        this.state.song.play((success) => {
-            if (success) { clearInterval(tickInterval) }
+    play() {
+        this.tickInterval = setInterval(() => this.tick(), 250);
+        this.sound.play((success) => {
+            if (success) { clearInterval(this.tickInterval) }
         });
     }
 
-    rewind = () => this.state.song.stop(() => this.state.song.play());
+    rewind = () => this.sound.stop(() => this.sound.play());
 
     pause = () => {
-        this.setState({ isPlaying: !this.state.isPlaying });
-        if (this.state.isPlaying) {
-            return this.state.song.play();
-        }
-        return this.state.song.pause();
+        this.setState({ 
+            isPlaying: !this.state.isPlaying 
+        }, () => {
+            if (this.state.isPlaying) {
+                return this.play();
+            }
+            return this.sound.pause();
+        });
     }
 
-    onTimerChange = (timer) => this.setState({ timer });
-
     onBack = () => {
-        this.state.song.stop();
+        this.sound.stop();
+        clearInterval(this.tickInterval);
+        this.tickInterval = null;
         this.props.navigation.goBack(null);
     }
 
     render() {
-        console.log('rendering');
         return (
             <ImageBackground
                 source={Icons.background}
@@ -86,7 +96,7 @@ class Play extends PureComponent {
                 </View>
                 <View style={playStyle.container}>
                     <View style={styles.centerContent}>
-                        <AnimatedCircularProgress
+                       <AnimatedCircularProgress
                             size={280}
                             width={3}
                             fill={100}
@@ -94,7 +104,7 @@ class Play extends PureComponent {
                             backgroundColor="#81d4cb"
                             rotation={-360}
                         >
-                            { (fill) => <Text style={playStyle.points}>{ this.state.timer }</Text>}
+                            { (fill) => <Text style={playStyle.points}>{this.state.timer}</Text>}
                         </AnimatedCircularProgress>
                     </View>
                     <View>
