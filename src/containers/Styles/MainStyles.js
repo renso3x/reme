@@ -8,7 +8,7 @@ const styles = {
         backgroundColor: 'transparent',
     },
     headContainer: {
-        paddingTop: 12,
+        paddingVertical: 12
     },
     iconLogo: {
         width: 50,
@@ -26,7 +26,8 @@ const styles = {
     },
     btnText: {
         color: '#fff',
-        fontSize: 20
+        fontSize: 25,
+        fontFamily: Fonts.ralewaySmB,
     },
     centerContent: {
         alignSelf: 'center',
@@ -34,27 +35,28 @@ const styles = {
     aboutTxt: {
         fontFamily: Fonts.raleway,
         fontSize: 14,
-        textAlign: 'justify'
+        textAlign: 'justify',
+        lineHeight: 20
     },
     aboutIconBtn: {
         position: 'absolute',
-        right: 10,
+        right: 20,
         top: 25,
     },
     backIconBtn: {
         position: 'absolute',
         left: 10,
-        top: 25,
+        top: 10,
+        flexDirection: 'row',
+        alignItems: 'center'
     },
     aboutIcon: {
         width: 25,
         height: 25,
     },
     aboutContainer: {
-        flex: 1,
-        paddingHorizontal: 20,
+        padding: 20,
         backgroundColor: '#fff',
-        justifyContent: 'center',
     },
 }
 

@@ -52,7 +52,7 @@ const Sounds = ({
                     isActive={sound.sound}
                 />
             </View>
-            <View>
+            <View style={playStyle.sliderView}>
                 <SliderControl 
                     leftIcon={Icons.volume}
                     style={playStyle}

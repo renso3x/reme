@@ -7,6 +7,7 @@ import {
 } from 'recompose';
 import { Base, Fonts, Icons } from '../metrics';
 import styles from './styles/SubHeading';
+import durationStyle from './styles/DurationStyles';
 import Interventions from './Interventions';
 import IconOption from './IconOption';
 
@@ -46,38 +47,40 @@ function Duration({
                     isActive={intervention.intervention}
                 />
             </View>
-            <Text style={styles.subText}>Visuals</Text>
-            <View style={styles.optionContainer}>
-                <IconOption
-                    name='abstract'
-                    imgName={Icons.abstract}
-                    onPress={() => selectedVisuals('abstract')}
-                    isActive={visuals.visuals} 
-                />
-                <IconOption 
-                    name='cloud'
-                    imgName={Icons.cloud} 
-                    onPress={() => selectedVisuals('cloud')}
-                    isActive={visuals.visuals} 
-                />
-                <IconOption 
-                    name='rain'
-                    imgName={Icons.rain} 
-                    onPress={() => selectedVisuals('rain')}
-                    isActive={visuals.visuals} 
-                />
-                <IconOption 
-                    name='ocean'
-                    imgName={Icons.ocean} 
-                    onPress={() => selectedVisuals('ocean')}
-                    isActive={visuals.visuals} 
-                />
-                <IconOption 
-                    name='cross'
-                    imgName={Icons.cross} 
-                    onPress={() => selectedVisuals('cross')}
-                    isActive={visuals.visuals} 
-                />
+            <View style={durationStyle.visualContainer}>
+                <Text style={styles.subText}>Visuals</Text>
+                <View style={styles.optionContainer}>
+                    <IconOption
+                        name='abstract'
+                        imgName={Icons.abstract}
+                        onPress={() => selectedVisuals('abstract')}
+                        isActive={visuals.visuals} 
+                    />
+                    <IconOption 
+                        name='cloud'
+                        imgName={Icons.cloud} 
+                        onPress={() => selectedVisuals('cloud')}
+                        isActive={visuals.visuals} 
+                    />
+                    <IconOption 
+                        name='rain'
+                        imgName={Icons.rain} 
+                        onPress={() => selectedVisuals('rain')}
+                        isActive={visuals.visuals} 
+                    />
+                    <IconOption 
+                        name='ocean'
+                        imgName={Icons.ocean} 
+                        onPress={() => selectedVisuals('ocean')}
+                        isActive={visuals.visuals} 
+                    />
+                    <IconOption 
+                        name='cross'
+                        imgName={Icons.cross} 
+                        onPress={() => selectedVisuals('cross')}
+                        isActive={visuals.visuals} 
+                    />
+                </View>
             </View>
         </View>
     );

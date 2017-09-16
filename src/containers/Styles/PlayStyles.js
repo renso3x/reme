@@ -1,6 +1,12 @@
 import { Fonts } from '../../metrics';
 
 export default {
+    animatedCircularProgress: {
+        alignItems: 'center'
+    },
+    sliderView: {
+        marginVertical: 20
+    },
     container: {
         flex: 1,
         justifyContent: 'space-around' 
@@ -13,7 +19,7 @@ export default {
         width: 150,
         textAlign: 'center',
         color: '#fff',
-        fontFamily: Fonts.raleway,
+        fontFamily: Fonts.avenirLight,
         fontSize: 55,
         fontWeight: "100"
     },
@@ -48,8 +54,7 @@ export default {
         height: 40,
     },
     playBtn: {
-        marginLeft: 15,
-        marginRight: 15,
+        marginHorizontal: 15
     },
 
 }

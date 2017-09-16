@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -66,7 +67,7 @@
 		D71015BB1F4BAC76002F86E6 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FB89831F4277A50074AE1C /* libRNSound.a */; };
 		D71015BF1F4BACF8002F86E6 /* guitar_05.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D71015BE1F4BACF8002F86E6 /* guitar_05.mp3 */; };
 		D71015C11F4BAE5F002F86E6 /* en_male_20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D71015C01F4BAE5F002F86E6 /* en_male_20.mp3 */; };
-		D77DA2E81F54E62100C80679 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D77DA2C11F54E36100C80679 /* libART.a */; };
+		D728838E1F6D6404005E4DF9 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D728838B1F6D63FC005E4DF9 /* libART.a */; };
 		E4A9FF2F9FC54683AC5CC20D /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E7CC8C2B4844C81A9F06C47 /* Raleway-BoldItalic.ttf */; };
 		E676124ECEA345388B22C076 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEFFC1A0CEF14BE58CC6EEA8 /* Raleway-Italic.ttf */; };
 		F370D04BA1684BC2B37713A0 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFBFB66A8EAF4390AE5C3D7B /* FontAwesome.ttf */; };
@@ -264,16 +265,16 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		D77DA2C01F54E36100C80679 /* PBXContainerItemProxy */ = {
+		D728838A1F6D63FC005E4DF9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D77DA2BB1F54E35F00C80679 /* ART.xcodeproj */;
+			containerPortal = D72883851F6D63FC005E4DF9 /* ART.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
 			remoteInfo = ART;
 		};
-		D77DA2C21F54E36100C80679 /* PBXContainerItemProxy */ = {
+		D728838C1F6D63FC005E4DF9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D77DA2BB1F54E35F00C80679 /* ART.xcodeproj */;
+			containerPortal = D72883851F6D63FC005E4DF9 /* ART.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 323A12871E5F266B004975B8;
 			remoteInfo = "ART-tvOS";
@@ -298,13 +299,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RCTVideo;
-		};
-		D7FB89631F4277A50074AE1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B6AFC18A88394424BF18B0EB /* RCTVideo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 641E28441F0EEC8500443AF6;
-			remoteInfo = "RCTVideo-tvOS";
 		};
 		D7FB89731F4277A50074AE1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -420,7 +414,7 @@
 		D6261607742C47FFACFF7836 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Medium.ttf"; path = "../src/assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; };
 		D71015BE1F4BACF8002F86E6 /* guitar_05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = guitar_05.mp3; path = "../../reme files/REME/Media/background/mp3/guitar_05.mp3"; sourceTree = "<group>"; };
 		D71015C01F4BAE5F002F86E6 /* en_male_20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = en_male_20.mp3; path = "../../reme files/REME/Media/voice/mp3/en_male_20.mp3"; sourceTree = "<group>"; };
-		D77DA2BB1F54E35F00C80679 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
+		D72883851F6D63FC005E4DF9 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
 		D9725D8CA3934D79A09C2B85 /* RNVolumeSlider.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVolumeSlider.xcodeproj; path = "../node_modules/react-native-volume-slider/ios/RNVolumeSlider.xcodeproj"; sourceTree = "<group>"; };
 		DFBFB66A8EAF4390AE5C3D7B /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		E0A84A8AA764482C97655829 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -446,7 +440,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D77DA2E81F54E62100C80679 /* libART.a in Frameworks */,
+				D728838E1F6D6404005E4DF9 /* libART.a in Frameworks */,
 				D71015BB1F4BAC76002F86E6 /* libRNSound.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -623,7 +617,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				D77DA2BB1F54E35F00C80679 /* ART.xcodeproj */,
+				D72883851F6D63FC005E4DF9 /* ART.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -715,11 +709,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D77DA2BC1F54E35F00C80679 /* Products */ = {
+		D72883861F6D63FC005E4DF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D77DA2C11F54E36100C80679 /* libART.a */,
-				D77DA2C31F54E36100C80679 /* libART-tvOS.a */,
+				D728838B1F6D63FC005E4DF9 /* libART.a */,
+				D728838D1F6D63FC005E4DF9 /* libART-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -761,7 +755,6 @@
 			isa = PBXGroup;
 			children = (
 				D7FB89621F4277A50074AE1C /* libRCTVideo.a */,
-				D7FB89641F4277A50074AE1C /* libRCTVideo.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -886,8 +879,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D77DA2BC1F54E35F00C80679 /* Products */;
-					ProjectRef = D77DA2BB1F54E35F00C80679 /* ART.xcodeproj */;
+					ProductGroup = D72883861F6D63FC005E4DF9 /* Products */;
+					ProjectRef = D72883851F6D63FC005E4DF9 /* ART.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
@@ -1144,18 +1137,18 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D77DA2C11F54E36100C80679 /* libART.a */ = {
+		D728838B1F6D63FC005E4DF9 /* libART.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libART.a;
-			remoteRef = D77DA2C01F54E36100C80679 /* PBXContainerItemProxy */;
+			remoteRef = D728838A1F6D63FC005E4DF9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D77DA2C31F54E36100C80679 /* libART-tvOS.a */ = {
+		D728838D1F6D63FC005E4DF9 /* libART-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libART-tvOS.a";
-			remoteRef = D77DA2C21F54E36100C80679 /* PBXContainerItemProxy */;
+			remoteRef = D728838C1F6D63FC005E4DF9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		D77DA3241F54E9C200C80679 /* libRNVolumeSlider.a */ = {
@@ -1177,13 +1170,6 @@
 			fileType = archive.ar;
 			path = libRCTVideo.a;
 			remoteRef = D7FB89611F4277A50074AE1C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D7FB89641F4277A50074AE1C /* libRCTVideo.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRCTVideo.a;
-			remoteRef = D7FB89631F4277A50074AE1C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		D7FB89741F4277A50074AE1C /* libthird-party.a */ = {

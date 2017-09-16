@@ -5,12 +5,14 @@ const styles = {
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'center',
-        paddingVertical: 8
+        // paddingVertical: 8,
+        marginVertical: 10
     },
     dualOption: {
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
+        marginVertical: 20
     },
     subContainer: {
         flexDirection: 'row',

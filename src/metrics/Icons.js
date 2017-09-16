@@ -1,6 +1,7 @@
 const Icons = {
     appMd: require('../assets/images/logo.png'),
     background: require('../assets/images/colour_overlay.png'),
+    bgImage: require('../assets/images/background.jpg'),
     guitar: require('../assets/images/guitar-icon.png'),
     piano: require('../assets/images/piano-icon.png'),
     rain: require('../assets/images/rain-icon.png'),
@@ -19,6 +20,7 @@ const Icons = {
     abstract: require('../assets/images/abstract-icon.png'),
     cloud: require('../assets/images/cloud-icon.png'),
     cross: require('../assets/images/cross-icon.png'),
+    airPlay: require('../assets/images/airplay-button.png'),
 }
 
 export { Icons };

@@ -5,9 +5,9 @@ export default {
         alignItems: 'center',
     },
     optionContainer: {
-        width: 70,
-        height: 70,
-        borderRadius: 35,
+        width: 80,
+        height: 80,
+        borderRadius: 40,
         backgroundColor: 'transparent',
         borderWidth: 1,
         borderColor: '#fff',
