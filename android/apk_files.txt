@@ -1,0 +1,2 @@
+keytool -genkey -v -keystore reme.keystore -alias reme -keyalg RSA -keysize 2048 -validity 10000
+pass: remeapp2017
