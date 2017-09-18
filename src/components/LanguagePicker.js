@@ -1,25 +1,34 @@
 import React from 'react';
-import { View, Picker } from 'react-native';
+import { View, Platform, PickerIOS, Text } from 'react-native';
+import PickerAndroid from 'react-native-picker-android';
 import styles from './styles/LanguagePickerStyles';
+
+let Picker = Platform.OS === 'ios' ? PickerIOS : PickerAndroid;
+let PickerItem = Picker.Item;
+
+const LANGUAGES = [
+    { name: 'Chinese(Mandarin)', key: 'cn' },
+    { name: 'Dutch', key: 'du' },
+    { name: 'English', key: 'en' },
+    { name: 'French', key: 'fr'},
+    { name: 'German', key: 'gr' }
+];
 
 const LanguagePicker = ({
     language,
     selectedLanguage
 }) => 
-    <View style={styles.container}>
+    <View>
         <Picker
-            itemStyle={styles.itemPicker}
-            selectedValue={language.language}
-            onValueChange={(itemValue, itemIndex) => selectedLanguage(itemValue)}
-        >
-            <Picker.Item label="Arabic" value="ar" />
-            <Picker.Item label="Canotonese" value="can" />
-            <Picker.Item label="English" value="en" />
-            <Picker.Item label="Greek" value="gr" />
-            <Picker.Item label="Italian" value="it" />
-            <Picker.Item label="Mandarin" value="man" />
-            <Picker.Item label="Turkish" value="tur" />
-            <Picker.Item label="Vietnamese" value="vie" />
+            selectedValue={'en'}
+            onValueChange={(key) => console.log(key)}>
+            {LANGUAGES.map((langLabel, index) => (
+                <PickerItem
+                    key={index}
+                    value={langLabel.key}
+                    label={langLabel.name}
+                />
+            ))}
         </Picker>
     </View>
 

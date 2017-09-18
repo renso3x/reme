@@ -46,12 +46,12 @@ const styles = {
     backIconBtn: {
         position: 'absolute',
         left: 10,
-        top: 10,
+        top: 15,
         flexDirection: 'row',
         alignItems: 'center'
     },
     aboutIcon: {
-        width: 25,
+        width: 26,
         height: 25,
     },
     aboutContainer: {

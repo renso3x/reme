@@ -14,7 +14,7 @@ import {
     withHandlers 
 } from 'recompose';
 import { 
-    Button as AppBtn
+    Button as AppBtn,
 } from '../components/common';
 import styles from './Styles/MainStyles';
 import { Base, Icons, Fonts } from '../metrics';
@@ -30,13 +30,13 @@ const enhance = compose(
     withState('visuals', 'setVisuals', 'abstract'),
     withState('sound', 'setSounds', 'guitar'),
     withState('voice', 'setVoice', 'male'),
-    withState('language', 'setLanguage', 'ar'),
+    withState('language', 'setLanguage', 'en'),
     withHandlers({
         selectedIntervention: ({ setIntervention, intervention }) => (intervention) => setIntervention({ intervention }),
         selectedVisuals: ({ setVisuals, visuals }) => (visuals) => setVisuals({ visuals }),
         selectedSound: ({ setSounds, sound }) => (sound) => setSounds({ sound }),
         selectedVoice: ({ setVoice, voice }) => (voice) => setVoice({ voice }),
-        selectedLanguage: ({ setLanguage, language }) => (language) => setLanguage({ language })
+        selectedLanguage: ({ setLanguage, language }) => (index) => console.log(index)
     })
 );
 
@@ -75,6 +75,7 @@ const Main = enhance((props) => {
                     <Duration {...props} />
                     <Sounds {...props} />
                     <Voice {...props} />
+                    <LanguagePicker {...props} />
                     <View style={{ height: 150 }}>
                         <SliderControl 
                             leftIcon={Icons.volume}

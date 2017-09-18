@@ -4,6 +4,7 @@ import {
     View, 
     Text,
     Image,
+    ImageBackground,
     ScrollView
 } from 'react-native';
 import { Button } from '../components/common';
@@ -19,7 +20,7 @@ function About({ navigation }) {
 
         <View style={{ flex: 1 }}>
 
-            <Image 
+            <ImageBackground 
                 source={Icons.background}
                 style={aboutStyles.header}
             >
@@ -46,7 +47,7 @@ function About({ navigation }) {
                 
                 </View>
                 
-            </Image>
+            </ImageBackground>
 
             <ScrollView contentContainerStyle={styles.aboutContainer}>
             
