@@ -170,9 +170,6 @@ class Play extends PureComponent {
                                 <AppBtn style={playStyle.playBtn} onPress={this.onBack}>
                                     <AppIcon name={Icons.stop} style={playStyle.controlIconSize} />
                                 </AppBtn>
-                                 <AppBtn style={playStyle.playBtn}>
-                                    <AppIcon name={Icons.airPlay} style={playStyle.controlIconSize} />
-                                </AppBtn>
                             </View>
                         </View>
                     </View>
