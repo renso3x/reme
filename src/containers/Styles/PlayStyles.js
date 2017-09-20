@@ -1,8 +1,11 @@
+import { PixelRatio } from 'react-native';
 import { Fonts } from '../../metrics';
+
+const ratio = PixelRatio.get();
 
 export default {
     animatedCircularProgress: {
-        alignItems: 'center'
+        alignItems: 'center',
     },
     sliderView: {
         marginVertical: 20
@@ -12,16 +15,17 @@ export default {
         justifyContent: 'space-around' 
     },
     points: {
-        backgroundColor: 'transparent',
+        alignItems: 'center',
         position: 'absolute',
-        top: 100,
-        left: 70,
-        width: 150,
-        textAlign: 'center',
+        top: (280/2) - 40 ,
+        left: 0,
+        alignSelf: 'center',
         color: '#fff',
+        width: 280,
+        height: 80,
+        textAlign: 'center',
         fontFamily: Fonts.avenirLight,
-        fontSize: 55,
-        fontWeight: "100"
+        fontSize: 120/ratio,
     },
     track: {
         height: 10,
@@ -47,7 +51,7 @@ export default {
     controlsContainer: {
         flexDirection: 'row',
         justifyContent: 'center',
-        marginTop: 20,
+        marginVertical: 20,
     },
     controlIconSize: {
         width: 40,

@@ -58,6 +58,12 @@ const styles = {
         padding: 20,
         backgroundColor: '#fff',
     },
+    headerText: {
+        fontSize: 20,
+        color: '#fff',
+        fontFamily: Fonts.ralewayMd,
+        alignSelf: 'center'
+    }
 }
 
 export default styles;

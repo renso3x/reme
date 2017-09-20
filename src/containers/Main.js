@@ -76,12 +76,6 @@ const Main = enhance((props) => {
                     <Sounds {...props} />
                     <Voice {...props} />
                     <LanguagePicker {...props} />
-                    <View style={{ height: 150 }}>
-                        <SliderControl 
-                            leftIcon={Icons.volume}
-                            style={playStyle}
-                        />
-                    </View>
                 </ScrollView>
                 <Button
                     raised

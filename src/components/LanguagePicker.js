@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, Platform, Text } from 'react-native';
+import { View, Platform, PickerIOS, Text } from 'react-native';
 import PickerAndroid from 'react-native-picker-android';
 import styles from './styles/LanguagePickerStyles';
 
-let PickerList = PickerAndroid;
+let PickerList = Platform.OS === 'ios' ? PickerIOS : PickerAndroid;
 let PickerItem = PickerList.Item;
 
 const LANGUAGES = [
@@ -18,10 +18,12 @@ const LanguagePicker = ({
     language,
     selectedLanguage
 }) => 
-    <View>
+    <View style={{ marginBottom: 50, height: 250 }}>
         <PickerList
             selectedValue={'en'}
-            onValueChange={(key) => console.log(key)}>
+            onValueChange={(key) => console.log(key)}
+            itemStyle={styles.itemPicker}
+        >
             {
                 LANGUAGES.map((langLabel, index) => (
                     <PickerItem

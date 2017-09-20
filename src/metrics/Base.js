@@ -1,6 +1,5 @@
-import { 
-    Dimensions
-} from 'react-native';
+import {  Dimensions } from 'react-native';
+import Fonts from './Fonts';
 
 const width = Dimensions.get('window').width;
 
@@ -15,7 +14,7 @@ const Base = {
     },
     deviceWidth: width,
     ph20: { paddingHorizontal: 15 },
-    mt10: { marginTop: 10 }
+    mt10: { marginTop: 10 },
 }
 
 export { Base };

@@ -2,7 +2,7 @@ const Fonts = {
     ralewayMd: 'Raleway-Medium',
     raleway: 'Raleway-Regular',
     ralewaySmB: 'Raleway-SemiBold',
-    avenirLight: 'Avenir-Light',
+    avenirLight: 'avenirnext-ultralight',
 }
 
 export { Fonts };

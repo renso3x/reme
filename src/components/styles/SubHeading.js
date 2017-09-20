@@ -6,13 +6,13 @@ const styles = {
         justifyContent: 'space-around',
         alignItems: 'center',
         // paddingVertical: 8,
-        marginVertical: 10
+        marginVertical: 20
     },
     dualOption: {
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        marginVertical: 20
+        marginVertical: 20,
     },
     subContainer: {
         flexDirection: 'row',

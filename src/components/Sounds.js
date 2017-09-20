@@ -15,7 +15,7 @@ const Sounds = ({
         <View style={styles.subContainer}>
             <View style={styles.hr} />
             <View style={Base.ph20}>
-                <Text style={styles.subText}>Sounds</Text>
+                <Text style={styles.subText}>Re:Muse</Text>
             </View>
             <View style={styles.hr} />
         </View>
@@ -50,12 +50,6 @@ const Sounds = ({
                     imgName={Icons.cross} 
                     onPress={() => selectedSound('cross')}
                     isActive={sound.sound}
-                />
-            </View>
-            <View style={playStyle.sliderView}>
-                <SliderControl 
-                    leftIcon={Icons.volume}
-                    style={playStyle}
                 />
             </View>
         </View>
