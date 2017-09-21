@@ -57,6 +57,7 @@
 		84598D0D1F544AD88F61F2D5 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4022E044FA940BC9E5419DB /* Raleway-LightItalic.ttf */; };
 		8920F3D2AEA9428CA5497D64 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6261607742C47FFACFF7836 /* Raleway-Medium.ttf */; };
 		892E116494BD460F82C3ED58 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA3B86DC984945D3B13247FD /* Raleway-MediumItalic.ttf */; };
+		930AB38917614716BA2E672E /* avenirnext-ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539FFEB0C81D4643912C3B13 /* avenirnext-ultralight.ttf */; };
 		96EA218D1FE94B888AA3536A /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23B670F3B48F4245B6C58E42 /* SimpleLineIcons.ttf */; };
 		9D344E50308E496A8228FD07 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F50C56803E84E8996FC7923 /* Raleway-ExtraLightItalic.ttf */; };
 		B019BCF1922F4AB1957D0C65 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BC59E17184F4FB59DF0349B /* Raleway-ThinItalic.ttf */; };
@@ -75,7 +76,6 @@
 		F370D04BA1684BC2B37713A0 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFBFB66A8EAF4390AE5C3D7B /* FontAwesome.ttf */; };
 		F40FAE6B02F243D3968984C0 /* libRNVolumeSlider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A6FF9B3C1F4F7FAB393711 /* libRNVolumeSlider.a */; };
 		F8A75EDC14EA420A82D635A5 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57F00274E0A14ADA9B89B4EF /* MaterialCommunityIcons.ttf */; };
-		930AB38917614716BA2E672E /* avenirnext-ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539FFEB0C81D4643912C3B13 /* avenirnext-ultralight.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -413,6 +413,7 @@
 		4F9BC1F8CCE04CFFAF26BB57 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		5048AB510AB1483E85A25AE9 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		516F5BB8733243A8B386AFDA /* libRNSVG.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSVG.a; sourceTree = "<group>"; };
+		539FFEB0C81D4643912C3B13 /* avenirnext-ultralight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "avenirnext-ultralight.ttf"; path = "../src/assets/fonts/avenirnext-ultralight.ttf"; sourceTree = "<group>"; };
 		54AA52CFE0584B9FA14F96CE /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
 		5778B1E515B94DAEBDD3AF37 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLight.ttf"; path = "../src/assets/fonts/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
 		57B2423DF1554B45A4DE23B3 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
@@ -436,6 +437,7 @@
 		D71015BE1F4BACF8002F86E6 /* guitar_05.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = guitar_05.mp3; path = "../../reme files/REME/Media/background/mp3/guitar_05.mp3"; sourceTree = "<group>"; };
 		D71015C01F4BAE5F002F86E6 /* en_male_20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = en_male_20.mp3; path = "../../reme files/REME/Media/voice/mp3/en_male_20.mp3"; sourceTree = "<group>"; };
 		D72883851F6D63FC005E4DF9 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
+		D7E88DA31F739EC000E761D0 /* abstract_ice.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = abstract_ice.mp4; path = ../src/assets/video/abstract_ice.mp4; sourceTree = "<group>"; };
 		D9725D8CA3934D79A09C2B85 /* RNVolumeSlider.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVolumeSlider.xcodeproj; path = "../node_modules/react-native-volume-slider/ios/RNVolumeSlider.xcodeproj"; sourceTree = "<group>"; };
 		DFBFB66A8EAF4390AE5C3D7B /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		E0A84A8AA764482C97655829 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -446,7 +448,6 @@
 		F1C3EEB9CDBD4A83AFC729C9 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BlackItalic.ttf"; path = "../src/assets/fonts/Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
 		F64712516F52400BA38F58CD /* RNFS.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFS.xcodeproj; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; };
 		FB14C1B6B4014A8C943112D5 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		539FFEB0C81D4643912C3B13 /* avenirnext-ultralight.ttf */ = {isa = PBXFileReference; name = "avenirnext-ultralight.ttf"; path = "../src/assets/fonts/avenirnext-ultralight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -677,6 +678,7 @@
 			children = (
 				D71015C01F4BAE5F002F86E6 /* en_male_20.mp3 */,
 				D71015BE1F4BACF8002F86E6 /* guitar_05.mp3 */,
+				D7E88DA31F739EC000E761D0 /* abstract_ice.mp4 */,
 				4F9BC1F8CCE04CFFAF26BB57 /* Entypo.ttf */,
 				2AFB858B9ACE46EAAD3A74EA /* EvilIcons.ttf */,
 				DFBFB66A8EAF4390AE5C3D7B /* FontAwesome.ttf */,

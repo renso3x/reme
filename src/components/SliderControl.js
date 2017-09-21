@@ -4,7 +4,8 @@ import Slider from 'react-native-slider';
 import volumeStyle from './styles/VolumeStyles';
 
 function SliderControl({
-	value = 0,
+	value,
+    onSlideChange,
 	leftIcon,
 	rightIcon,
 	onSlide,
@@ -16,9 +17,13 @@ function SliderControl({
         	<Slider
                 trackStyle={style.track}
                 thumbStyle={style.thumb}
-                minimumTrackTintColor='#fff'
+                minimumTrackTintColor='transparent'
                 style={volumeStyle.slider}
-                onValueChange={() => null}
+                minimumValue={0}
+                maximumValue={100}
+                step={1}
+                value={value}
+                onValueChange={onSlideChange}
             />
             {
                 rightIcon && <Image  source={rightIcon} style={volumeStyle.imageSize} />
