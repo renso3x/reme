@@ -6,7 +6,9 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "android:build": "cd android && ./gradlew assembleRelease",
-    "android:install": "cd android && ./gradlew assembleRelease && ./gradlew installRelease"
+    "android:install": "cd android && ./gradlew assembleRelease && ./gradlew installRelease",
+    "rewatchman": "watchman watch-del .;watchman watch-project .",
+    "clean": "find . -name 'node_modules' -type d -exec rm -rf {} +"
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -25,7 +27,7 @@
     "react-native-sound": "^0.10.3",
     "react-native-svg": "^5.4.1",
     "react-native-vector-icons": "^4.3.0",
-    "react-native-video": "^1.0.0",
+    "react-native-video": "^2.0.0",
     "react-navigation": "^1.0.0-beta.11",
     "react-redux": "^5.0.6",
     "recompose": "^0.24.0",
